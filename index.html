@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuarios</h1>
+        <form id="registroForm">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" minlength="6" required>
+            <select id="tipoUsuario" name="tipoUsuario" required>
+                <option value="" disabled selected>Selecciona tu tipo de usuario</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="maestro">Maestro</option>
+            </select>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
